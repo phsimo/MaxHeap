@@ -1,5 +1,6 @@
 # MaxHeap
-Notes for my MaxHeap Class
+I think among the data structures, the heap is probably among the most underrated ones because people sometimes tend to use it without understanding how it works. Indeed, we often get to implement LinkedList, BinarySearchTree, etc, and not so frequently we get to implement a heap or a priority queue. I personally love unconventional data structures and heap is an example. In this project, I explain what heap is, what it does and is used for, and provide a brief implementation for illustration.
+
 ## Introduction. 
 A priority queue is a data type where each element has a "priority" associated with it. In a priority queue, an element with higher priority is served before an element with lower priority. If two elements have the same priority, they are served according to their order in the queue. 
 
