@@ -1,9 +1,15 @@
 # MaxHeap
 Repository for my Max Heap Class
 ## Introduction. 
-What is priority queue, how it can be implelented, and why maxheap is a good choice.
+A priority queue is an  data type where each element has a "priority" associated with it. In a priority queue, an element with high priority is served before an element with low priority. If two elements have the same priority, they are served according to their order in the queue. 
+
+One of the most trivial ways to implement a priority queue is through a sorted array. However, this simple solution does come with its disadvanatges. Specifically, the complexity for sorting an array is O(NlgN), and for updating a sorted array with a newly inserted element O(N). This complexity can be vastly improved by the use a heap structure, which has complexity of O(N) for building the structure from scratch and O(lgN) for updating.
 
 ## MaxHeap structure
+A binary heap data structure, in general, is an array object that can be viewed as nearly complete binary tree. Each node of the tree corresponds to an element of the the array that stores the value in the node. The tree is completely filled on all levels except possibly the lowest, which is filled from the left up to a point. 
+
+heap can be either a Min Heap or a Max Heap, both havve very similar structures. I wil discuss a Max Heap here.
+
 It is basically an array, where elements are positions in such a way in order to aid the process of retrieving the max, and update...
 
 ## Implementation
