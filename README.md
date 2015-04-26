@@ -62,3 +62,6 @@ Building a max-heap - O(N)
 Heapify - O(lgN)
 
 HeapSort - O(NlgN)
+
+##Test
+For convenience, I also include a test class,called MaxHeapTest, that tests the methods of the MaxHeap class using JUnit. Its code is self-explanatory. 
