@@ -50,6 +50,8 @@ At the heart of the heap class reside four methods:
   // returns a sorted array in descending order
   }
  ```
+ 
+ 
 ## Complexity
 Getting the maximum element of the heap without removing has complexity O(1).
 
