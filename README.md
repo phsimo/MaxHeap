@@ -18,36 +18,41 @@ PARENT<=CHILD, thus the smallest element in a min-heap is at the root.
 ## Implementation
 At the heart of the heap class reside four methods:
 
-1. heapify: The core method of the class that checks and maintains the proper structure of the max-heap starting from the elemement specified by index
+1. heapify: The core method of the class that checks and maintains the proper structure of the max-heap starting from the elemement specified by "index"
 
  ```java
  private void heapify(int index){
    // maintain the proper structure of a max heap
  }
  ```
-2.increaseKey: the method that checks
-```java
- private void increaseKey() {
- // maintains the structure of a heap after a new element has been inserted into it
- }
-```
+2.increaseKey: when a new element is inserted to the end of the heap, that element needs to be positioned in the right place in the max-heap, specifically by floating up the binary tree.
+ ```java
+  private void increaseKey() {
+  // maintains the structure of a heap after a new element has been inserted into it
+  }
+ ```
 
-3. insert, explain comparator and comparable
-```java
- public void insert(T element) {
- // insert an element of typ T in the heap
-```
+3. insert: a single element or a list of elements of type T. This method will call the increaseKey method to assure that the structure of the max-heap is maintained properly.
+ ```java
+  public void insert(T element) {
+  // insert an element of typ T in the heap
+ ```
+ 
+ ```java
+  public void insert(List<T> element) {
+   // insert a list of type T in the heap
+ ```
 
-```java
- public void insert(List<T> element) {
-  // insert a list of type T in the heap
-```
+4. heapSort: this method makes use of the heap to sort an array with time complexity O(NlgN). It sorts the array by repeatedly removing the root (the maximum element) of the heap and calling heapify at the root.
 
-4. heap sort as an alternative to merge sort and quick sort
-
-```java
- public T[] getSortedArray() {
- // returns a sorted array in descending order
- }
-```
-
+ ```java
+  public T[] getSortedArray() {
+  // returns a sorted array in descending order
+  }
+ ```
+## Complexity
+Getting the maximum element of the heap without removing has complexity O(1).
+Getting and removing the maximum element of the heap has complexity O(lgN).
+Building a max-heap - O(N)
+Heapify - O(lgN)
+HeapSort - O(NlgN)
