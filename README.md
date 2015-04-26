@@ -32,7 +32,7 @@ At the heart of the heap class reside four methods:
   }
  ```
 
-3. insert: a single element or a list of elements of type T. This method will call the increaseKey method to assure that the structure of the max-heap is maintained properly.
+3. insert: Two similar methods that insert a single element, and a list of elements of type T, respectively. This method will call the increaseKey method to assure that the structure of the max-heap is maintained properly.
  ```java
   public void insert(T element) {
   // insert an element of type T in the heap
