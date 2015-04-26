@@ -52,7 +52,11 @@ At the heart of the heap class reside four methods:
  ```
 ## Complexity
 Getting the maximum element of the heap without removing has complexity O(1).
+
 Getting and removing the maximum element of the heap has complexity O(lgN).
+
 Building a max-heap - O(N)
+
 Heapify - O(lgN)
+
 HeapSort - O(NlgN)
