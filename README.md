@@ -1,5 +1,5 @@
 # MaxHeap
-Repository for my Max Heap Class
+Notes for my MaxHeap Class
 ## Introduction. 
 A priority queue is an  data type where each element has a "priority" associated with it. In a priority queue, an element with high priority is served before an element with low priority. If two elements have the same priority, they are served according to their order in the queue. 
 
@@ -8,18 +8,22 @@ One of the most trivial ways to implement a priority queue is through a sorted a
 ## MaxHeap structure
 A binary heap data structure, in general, is an array object that can be viewed as nearly complete binary tree. Each node of the tree corresponds to an element of the the array that stores the value in the node. The tree is completely filled on all levels except possibly the lowest, which is filled from the left up to a point. 
 
-heap can be either a Min Heap or a Max Heap, both havve very similar structures. I wil discuss a Max Heap here.
+There are two kinds of binary heap:max-heaps and min-heaps. In both kinds, the values in the nodes satisfy a **heap property**, the specifics of which depend on the kind of heap. In a max-heap, the max-heap property is that for every node *i* other than the root, PARENT>=CHILD that is, the value of a node is at most the value of its parent. Thus, the largest element in a max-heap is stored at the root, and the subtree rooted at a node contains vales no larger than that contained at the node itself. The image below represents a max-heap
 
-It is basically an array, where elements are positions in such a way in order to aid the process of retrieving the max, and update...
+![Alt text](https://github.com/phsimo/MaxHeap/blob/master/MaxHeap.gif "Max Heap Structure")
+
+A **min-heap** is organized in the opposite way; the **min=heap property** is that for every node *i* other than the root,
+PARENT<=CHILD, thus the smallest element in a min-heap is at the root.
 
 ## Implementation
-Explain methods
-* heapify, why it is needed
-* insert, explain comparator and comparable
-* heap sort as an alternative to merge sort and quick sort
- 
+At the heart of the heap class reside three methods
+1. heapify: 
 
+ ```java
+ private void heapify(int index){
+   // maintain the proper structure of a max heap
+ }
+ ```
+2. insert, explain comparator and comparable
+3. heap sort as an alternative to merge sort and quick sort
 
-
-A heap is one of the most efficient implementations of a priority queu. It's time complexity is O(lgN), much better than that of a sorted array which has a complexity of O(N). However, the implementation of a heap is not as commonly seen as a linked list.
-In the class I wrote, I implement this 
