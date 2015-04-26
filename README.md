@@ -1,7 +1,7 @@
 # MaxHeap
 I think among the data structures, the heap is probably among the most underrated ones because people sometimes tend to use it without understanding how it works, or even abusing a sorted array in the place where a heap should be used. Indeed, we often get to implement LinkedList, BinarySearchTree, etc, and not so frequently we get to implement a heap or a priority queue. I personally love unconventional data structures and heap is an example. In this project, I explain what heap is, what it does and is used for, and provide a brief implementation for illustration.
 
-Please note that this is to illustrate how a priority/heap works. People who seek to use a priorty should use a class that Java already provides: java.util.PriorityQueue
+Please note that this is to illustrate how a priority/heap works. People who seek to use a priority queue should use a class that Java already provides: java.util.PriorityQueue
 
 ## Introduction. 
 A priority queue is a data type where each element has a "priority" associated with it. In a priority queue, an element with higher priority is served before an element with lower priority. If two elements have the same priority, they are served according to their order in the queue. 
