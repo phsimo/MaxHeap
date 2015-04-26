@@ -12,18 +12,42 @@ There are two kinds of binary heap:max-heaps and min-heaps. In both kinds, the v
 
 ![Alt text](https://github.com/phsimo/MaxHeap/blob/master/MaxHeap.gif "Max Heap Structure")
 
-A **min-heap** is organized in the opposite way; the **min=heap property** is that for every node *i* other than the root,
+A **min-heap** is organized in the opposite way; the **min-heap property** is that for every node *i* other than the root,
 PARENT<=CHILD, thus the smallest element in a min-heap is at the root.
 
 ## Implementation
-At the heart of the heap class reside three methods
-1. heapify: 
+At the heart of the heap class reside four methods:
+
+1. heapify: The core method of the class that checks and maintains the proper structure of the max-heap starting from the elemement specified by index
 
  ```java
  private void heapify(int index){
    // maintain the proper structure of a max heap
  }
  ```
-2. insert, explain comparator and comparable
-3. heap sort as an alternative to merge sort and quick sort
+2.increaseKey: the method that checks
+```java
+ private void increaseKey() {
+ // maintains the structure of a heap after a new element has been inserted into it
+ }
+```
+
+3. insert, explain comparator and comparable
+```java
+ public void insert(T element) {
+ // insert an element of typ T in the heap
+```
+
+```java
+ public void insert(List<T> element) {
+  // insert a list of type T in the heap
+```
+
+4. heap sort as an alternative to merge sort and quick sort
+
+```java
+ public T[] getSortedArray() {
+ // returns a sorted array in descending order
+ }
+```
 
