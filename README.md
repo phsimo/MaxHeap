@@ -3,7 +3,7 @@ Notes for my MaxHeap Class
 ## Introduction. 
 A priority queue is a data type where each element has a "priority" associated with it. In a priority queue, an element with higher priority is served before an element with lower priority. If two elements have the same priority, they are served according to their order in the queue. 
 
-One of the most trivial ways to implement a priority queue is through a sorted array. However, this simple solution does come with its disadvanatges. Specifically, the complexity for sorting an array is O(NlgN), and for updating a sorted array with a newly inserted element O(N). This complexity can be vastly improved by the use a heap structure, which has complexity of O(N) for building the structure from scratch and O(lgN) for updating.
+One of the most trivial ways to implement a priority queue is through a sorted array. However, this simple solution does come with its disadvantages. Specifically, the complexity for sorting an array is O(NlgN), and for updating a sorted array with a newly inserted element O(N). This complexity can be vastly improved by the use a heap structure, which has complexity of O(N) for building the structure from scratch and O(lgN) for updating.
 
 ## MaxHeap structure
 A binary heap data structure, in general, is an array object that can be viewed as nearly complete binary tree. Each node of the tree corresponds to an element of the the array that stores the value in the node. The tree is completely filled on all levels except possibly the lowest, which is filled from the left up to a point. 
@@ -35,7 +35,7 @@ At the heart of the heap class reside four methods:
 3. insert: a single element or a list of elements of type T. This method will call the increaseKey method to assure that the structure of the max-heap is maintained properly.
  ```java
   public void insert(T element) {
-  // insert an element of typ T in the heap
+  // insert an element of type T in the heap
  ```
  
  ```java
