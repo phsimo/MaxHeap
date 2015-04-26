@@ -18,7 +18,7 @@ PARENT<=CHILD, thus the smallest element in a min-heap is at the root.
 ## Implementation
 At the heart of the heap class reside four methods:
 
-1. heapify: The core method of the class that checks and maintains the proper structure of the max-heap starting from the elemement specified by "index"
+1. heapify: The core method of the class that checks and maintains the proper structure of the max-heap starting from the element specified by "index"
 
  ```java
  private void heapify(int index){
